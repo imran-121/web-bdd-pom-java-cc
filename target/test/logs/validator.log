@@ -1,0 +1,3 @@
+2021-08-02 06:09:12,450 ERROR validator [main] >>ClassName = validateJsonSchema >>MethodName = validateJsonSchema >>LineNumber = 37
+2021-08-02 06:12:10,217 ERROR validator [main] >>ClassName = validateJsonSchema >>MethodName = validateJsonSchema >>LineNumber = 43
+2021-08-02 08:05:49,125 ERROR validator [main] >>ClassName = validateSchemaIsNotNull >>MethodName = validateSchemaIsNotNull >>LineNumber = 270

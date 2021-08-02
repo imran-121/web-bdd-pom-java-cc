@@ -1,0 +1,30 @@
+version: 2.1
+
+# We have two jobs
+jobs:
+  build: # build the maven project
+    docker:
+      - image: circleci/openjdk:9.0
+    steps:
+      - checkout
+      - run:
+          name: Clean And Build Project
+          command: mvn clean install
+      - run:
+          name: Copy Dependencies
+          command: mvn dependency:copy-dependencies
+  test: # run the test cases
+    machine: true
+    steps:
+      - run:
+          name: Execute Test Cases
+          command: java -cp /home/circleci/project/target/dependency/junit-4.13.1.jar org.junit.runner.JUnitCore starter.Runner
+
+# Orchestrate our job run sequence
+workflows:
+  build_and_test:
+    jobs:
+      - build
+      - test:
+          requires:
+            - build # test job is dependent on build job
