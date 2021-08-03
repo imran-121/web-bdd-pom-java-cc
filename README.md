@@ -25,7 +25,7 @@ The whole frame work can be broken down to following packages(modules) <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Its a wrapper over "rest assured libarary", it also contains response extartors <br/>
 &nbsp;&nbsp; 4) **validator** Its contains class will will process the response or any input which needs specific processing.Returns true or false </br>
 
-All of the above packages are under "src/test/java" and each module contains group of classes depending up role <br>
+All of the above packages are under "src/test/java" and each module contains group of classes depending upon role. <br>
 
 ## Project Directories
 
