@@ -5,7 +5,7 @@ I have created a **feature** file and documented test scenerios in it and then I
 Also configured the **circle ci** pipline.
 
 ## Developement Enviroment/Libararies
-Below are the libararies I have used with latest version avialble to now<br/>
+Below are the libararies I have used with latest version avialble on mevan repository<br/>
 **Java Version** 9 &nbsp;&nbsp;
 **Maven Compiler** 1.7&nbsp;&nbsp;
 **Cucumber Java 6.10.4 &nbsp &nbsp;&nbsp;
@@ -23,7 +23,7 @@ The whole frame work can be broken down to following packages(modules) <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Each feature file will have only one step definition file.<br/>
 &nbsp;&nbsp; 3) **http_request_processor** This module will handel all of the http request and Responses (GET,POST,DELETE,PUT etc). <br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Its a wrapper over "rest assured libarary", it also contains response extartors <br/>
-&nbsp;&nbsp; 4) **validator** Its contains class will will process the respponse or any input which needs specific processing. Always resturn true or false </br>
+&nbsp;&nbsp; 4) **validator** Its contains class will will process the response or any input which needs specific processing.Returns true or false </br>
 
 All of the above packages are under "src/test/java" and each module contains group of classes depending up role <br>
 
